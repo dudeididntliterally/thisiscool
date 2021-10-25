@@ -1,0 +1,128 @@
+
+<!DOCTYPE html><html lang="en"><head><title>Crazy Roll 3D Game Files - Crazy Games</title><link href="https://raw.githack.com/dudeididntliterally/thisiscool/main/bundle.js" rel="preload" as="script" /><link href="https://www.crazygames.com/game/crazy-roll-3d" rel="canonical" /><meta charset="UTF-8" /><meta name="robots" content="noindex, follow" /><meta name="description" content="The game files for Crazy Roll 3D, a free browser game on CrazyGames.com" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Accept-CH" content="DPR" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><style id="pacman-styles">/* purple background */
+body {
+  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+  background-position: center;
+  text-align: center;
+}
+/* for positioning of pacman loader */
+body, html { height: 100%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate_preloadpacman_half_up {
+  0% {
+    transform: rotate(270deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(270deg); }
+}
+
+@keyframes rotate_preloadpacman_half_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes preloadpacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-100px, -6.25px);
+  }
+}
+
+.preloadpacman {
+  position: relative;
+}
+.preloadpacman > div:nth-child(2) {
+  animation: preloadpacman-balls 1s -0.99s infinite linear;
+}
+.preloadpacman > div:nth-child(3) {
+  animation: preloadpacman-balls 1s -0.66s infinite linear;
+}
+.preloadpacman > div:nth-child(4) {
+  animation: preloadpacman-balls 1s -0.33s infinite linear;
+}
+.preloadpacman > div:nth-child(5) {
+  animation: preloadpacman-balls 1s 0s infinite linear;
+}
+.preloadpacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(3),
+.preloadpacman > div:nth-child(4),
+.preloadpacman > div:nth-child(5),
+.preloadpacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, async, callback) {
+  var head = document.head;
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  if(async) {
+    script.async = true;
+  }
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+var options = {"loader":"5.6.x","loaderOptions":{"moduleJsonUrl":"https://raw.githack.com/dudeididntliterally/thisiscool/main/build.json","unityLoaderUrl":"https://raw.githack.com/dudeididntliterally/thisiscool/main/UnityLoader-v3.js"},"thumbnail":"https://3rr4bq.by.files.1drv.com/y4psWPnHe_WGuTctMmPu8c9akI9W-9uLU8pjWNLiDa0v4c2WmSZg4E3RXmh4XcUs0JhP265NbUtwPN9lLGT-8TG98VuRe0zEqbzG84wclFz6k1M03jIjk6n_4hobrszy7ttGvfkgdEFc4lr0_gj9DRs3xn1YLoJgI-D7uwp9NiDbNb2q4Jq7t2CFPZVrHrfnBjZfsafhT58SZHmI2RDoSUvS5_CotySiGigT07E-6JpQFc/thumb-1551212403077.png","gameName":"Crazy Roll 3D","gameHttps":true,"gameSlug":"crazy-roll-3d","gameStatus":"published","showAdOnExternal":"ALWAYS","showAdOnInternal":"DEFAULT","appStoreLink":null,"playStoreLink":null,"steamStoreLink":null,"disableEmbedding":false,"dollarRate":0.8601551203744082,"upvotes":248908,"downvotes":20820,"releaseDate":"2019-02-26","locale":"en_US","controls":{"text":"<h3>Controls</h3>\n<ul>\n    <li>Press A/D or left/right arrow to steer left/right</li>\n    <li>Use 1, 2, or 3 to use a power-up</li>\n</ul>"},"videoThumbnail":"https://onedrive.live.com/?cid=E2701DE5B44E8A9F&id=E2701DE5B44E8A9F%21109&parId=E2701DE5B44E8A9F%21103&o=OneUp","video":{"original":"https://onedrive.live.com/?cid=E2701DE5B44E8A9F&id=E2701DE5B44E8A9F%21110&parId=E2701DE5B44E8A9F%21103&o=OneUp","sizes":[{"width":180,"height":111,"location":"https://onedrive.live.com/embed?cid=E2701DE5B44E8A9F&resid=E2701DE5B44E8A9F%21109&authkey=ABSJ8-PKmdagaKM"},{"width":360,"height":222,"location":"https://videos.crazygames.com/crazy-roll-3d/2/crazy-roll-3d-360x222.mp4"},{"width":540,"height":333,"location":"https://videos.crazygames.com/crazy-roll-3d/2/crazy-roll-3d-540x333.mp4"},{"width":720,"height":444,"location":"https://videos.crazygames.com/crazy-roll-3d/2/crazy-roll-3d-720x444.mp4"}]},"sandbox":true,"totalSize":"13 MB","minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":5000,"noMidrollAdInFirstMinutes":3,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"arcade","tagsEnSlugs":["avoid","3d","webgl","1-player","platform","ball","skill","power-up","collect"],"fullscreen":"ADDS_VALUE","orientation":null,"category":"Avoid","categoryLink":"https://www.crazygames.com/t/avoid","gameLink":"https://www.crazygames.com/game/crazy-roll-3d","alternativeGames":[{"category":"Arcade","gameSlug":"jet-rush","gameName":"Jet Rush","rating":9.2,"thumbnail":"https://images.crazygames.com/jetrush.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/jet-rush/1/jet-rush-180x111.mp4","gameLink":"https://www.crazygames.com/game/jet-rush","loader":"5.6.x"},{"category":"Arcade","gameSlug":"rocking-sky-trip","gameName":"Rocking Sky Trip","rating":8.5,"thumbnail":"https://images.crazygames.com/rockingskytrip.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/rocking-sky-trip.mp4","gameLink":"https://www.crazygames.com/game/rocking-sky-trip","loader":"5.6.x"},{"category":"Arcade","gameSlug":"picker-3d","gameName":"Picker 3D","rating":8.8,"thumbnail":"https://images.crazygames.com/games/picker-3d/thumb-1569231724295.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/picker-3d/1/picker-3d-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/picker-3d","loader":"iframe"},{"category":"Arcade","gameSlug":"pac-xon","gameName":"Pac Xon (Deluxe)","rating":9.1,"thumbnail":"https://images.crazygames.com/games/pac-xon/cover-1586285413312.jpg?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/pac-xon/1/pac-xon-180x111.mp4","gameLink":"https://www.crazygames.com/game/pac-xon","loader":"iframe"},{"category":".io","gameSlug":"ev-io","gameName":"Ev.io","rating":9.1,"thumbnail":"https://images.crazygames.com/ev-io/20210120171539/ev-io-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/ev-io/1/ev-io-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/ev-io","loader":"iframe"},{"category":"Arcade","gameSlug":"stack-shot","gameName":"Stack Shot","rating":9.1,"thumbnail":"https://images.crazygames.com/stackshot.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/stack-shot/1/stack-shot-180x111.mp4","gameLink":"https://www.crazygames.com/game/stack-shot","loader":"5.6.x"},{"category":"Arcade","gameSlug":"air-wings-missile-attack","gameName":"Air Wings - Missile Attack","rating":9.2,"thumbnail":"https://images.crazygames.com/airwingsmissileattack.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/air-wings--missile-attack.mp4","gameLink":"https://www.crazygames.com/game/air-wings-missile-attack","loader":"5.6.x"},{"category":"Sports","gameSlug":"crazy-flips-3d","gameName":"Crazy Flips 3D","rating":9.1,"thumbnail":"https://images.crazygames.com/games/crazy-flips-3d/cover-1626361578260.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/crazy-flips-3d/1/crazy-flips-3d-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/crazy-flips-3d","loader":"unity2020"},{"category":"Adventure","gameSlug":"necromancer-2-the-crypt-of-the-pixels","gameName":"Necromancer 2: The Crypt of the Pixels","rating":8.5,"thumbnail":"https://images.crazygames.com/necromancer2thecryptofthepixels.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/necromancer-2-the-crypt-of-the-pixels.mp4","gameLink":"https://www.crazygames.com/game/necromancer-2-the-crypt-of-the-pixels","loader":"iframe"},{"category":"Arcade","gameSlug":"jump-jelly-jump","gameName":"Jump Jelly Jump","rating":8.1,"thumbnail":"https://images.crazygames.com/games/jump-jelly-jump/thumb-1572345909877.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/jump-jelly-jump/1/jump-jelly-jump-thumbnail.mp4","gameLink":"https://www.crazygames.com/game/jump-jelly-jump","loader":"iframe"}],"country":"CA","domainHasNoCMP":false};
+var SDK_READY = false;
+var GF_READY = false;
+var GF_LOAD_CALLED = false;
+loadScript("https://raw.githack.com/dudeididntliterally/thisiscool/main/bundle.js", true, function() {
+    Crazygames.load(options).then(function() {
+      var pacmanWrapper = document.getElementById('pacman');
+      var pacmanStyles = document.getElementById('pacman-styles');
+
+      if (pacmanWrapper && pacmanStyles) {
+        pacmanWrapper.remove();
+        pacmanStyles.remove();
+      }
+    });
+});</script></body></html>
